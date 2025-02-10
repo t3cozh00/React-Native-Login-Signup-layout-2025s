@@ -9,9 +9,13 @@ import {
 import { router } from "expo-router";
 
 import Ionicons from "@expo/vector-icons/Ionicons";
-import React from "react";
+import React, { useState } from "react";
 
 const SignupView = () => {
+  const [nameFocused, setNameFocused] = useState(false);
+  const [emailFocused, setEmailFocused] = useState(false);
+  const [passwordFocused, setPasswordFocused] = useState(false);
+
   return (
     <View style={styles.container}>
       <View style={styles.content}>
