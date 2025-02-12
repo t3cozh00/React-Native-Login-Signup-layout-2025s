@@ -89,14 +89,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "flex-end",
-    padding: 40,
+    padding: 30,
   },
   content: {
     flex: 1,
     justifyContent: "center",
   },
   headingText: {
-    fontSize: 40,
+    fontSize: 35,
     fontWeight: "bold",
   },
   subHeading: {
@@ -109,29 +109,25 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderColor: "gray",
     borderRadius: 5,
-    marginTop: 20,
+    marginTop: 15,
     backgroundColor: "white",
     padding: 10,
-    shadowColor: "#000",
+    shadowColor: "#b3b3b5",
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.2,
     shadowRadius: 3,
     elevation: 5,
   },
   inputFocused: {
-    borderBlockColor: "eaf6ed",
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 8 },
-    shadowOpacity: 0.3,
-    shadowRadius: 5,
-    elevation: 8,
+    borderColor: "#0a0a0a",
+    shadowColor: "#0a0a0a",
   },
   inputIcon: {
     marginRight: 10,
   },
   loginInput: {
     flex: 1,
-    height: 35,
+    height: 40,
     fontSize: 16,
   },
   forgotText: {
@@ -153,7 +149,6 @@ const styles = StyleSheet.create({
   },
 
   loginButtonText: {
-    flex: 1,
     flexDirection: "row",
     color: "white",
     fontWeight: "bold",
@@ -169,6 +164,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "gray",
   },
+
   signupText: {
     color: "#5fb075",
     fontWeight: "bold",
