@@ -1,7 +1,7 @@
 import { ScrollView } from "react-native";
 import React from "react";
 
-import LoginView from "./LoginView";
+import LoginView from "./StackNav";
 
 const index = () => {
   return (

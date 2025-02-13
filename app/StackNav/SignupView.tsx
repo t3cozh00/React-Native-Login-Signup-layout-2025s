@@ -9,7 +9,7 @@ import {
   Platform,
   ScrollView,
 } from "react-native";
-import { router } from "expo-router";
+import { Link } from "expo-router";
 
 import Ionicons from "@expo/vector-icons/Ionicons";
 import React, { useState } from "react";
@@ -30,9 +30,9 @@ const SignupView = () => {
         keyboardShouldPersistTaps="handled"
       >
         <View style={styles.content}>
-          <Pressable onPress={() => router.push("/LoginView")}>
+          <Link href="/">
             <Ionicons name="arrow-back" size={30} color="gray" />
-          </Pressable>
+          </Link>
 
           <Text style={styles.headingText}>Create Account</Text>
 
@@ -127,9 +127,9 @@ const SignupView = () => {
       <View style={styles.bottomContainer}>
         <Text style={styles.bottomText}>
           Already have an account?
-          <Pressable onPress={() => router.push("/LoginView")}>
+          <Link href="/">
             <Text style={styles.signupText}>Sign in</Text>
-          </Pressable>
+          </Link>
         </Text>
       </View>
     </KeyboardAvoidingView>

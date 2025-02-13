@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   Pressable,
 } from "react-native";
-import { router } from "expo-router";
+import { router, Link } from "expo-router";
 
 import Ionicons from "@expo/vector-icons/Ionicons";
 import React, { useState } from "react";
@@ -74,9 +74,9 @@ const LoginView = () => {
       <View style={styles.bottomContainer}>
         <Text style={styles.bottomText}>
           Don't have an account?
-          <Pressable onPress={() => router.push("/SignupView")}>
+          <Link href="/StackNav/SignupView">
             <Text style={styles.signupText}>Sign up</Text>
-          </Pressable>
+          </Link>
         </Text>
       </View>
     </View>
